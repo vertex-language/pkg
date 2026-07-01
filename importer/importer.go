@@ -9,7 +9,7 @@
 // source at that exact commit.
 package importer
 
-import "github.com/vertex-language/pkg/mod"
+import "github.com/vertex-language/pkg/parser/mod"
 
 // Fetcher resolves and materializes a Vertex module from its VCS host.
 type Fetcher interface {

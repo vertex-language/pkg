@@ -1,6 +1,6 @@
 package importer
 
-import "github.com/vertex-language/pkg/mod"
+import "github.com/vertex-language/pkg/parser/mod"
 
 // repoURL derives the git remote URL for a module path.
 //
