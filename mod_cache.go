@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/vertex-language/pkg/mod"
+	"github.com/vertex-language/pkg/parser/mod"
 )
 
 // Mod returns the extracted, read-only source directory for path@version

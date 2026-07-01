@@ -12,7 +12,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/vertex-language/pkg/mod"
+	"github.com/vertex-language/pkg/parser/mod"
 )
 
 // readSum reads and parses a vs.sum file:

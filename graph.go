@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/vertex-language/pkg/lib"
-	"github.com/vertex-language/pkg/mod"
+	"github.com/vertex-language/pkg/parser/lib"
+	"github.com/vertex-language/pkg/parser/mod"
 )
 
 // Module is one resolved node in a dependency graph: a fetched (or

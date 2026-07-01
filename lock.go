@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 
 	"github.com/gofrs/flock"
-	"github.com/vertex-language/pkg/mod"
+	"github.com/vertex-language/pkg/parser/mod"
 )
 
 // lockModule acquires an exclusive, cross-process file lock scoped to a

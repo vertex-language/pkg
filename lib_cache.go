@@ -13,7 +13,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/vertex-language/pkg/lib"
+	"github.com/vertex-language/pkg/parser/lib"
 	"github.com/vertex-language/pkg/provider"
 )
 
