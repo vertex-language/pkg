@@ -3,7 +3,10 @@
 // Vertex toolchain, as specified by vs.lib's own spec document.
 package lib
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 // File is the interpreted form of a vs.lib file.
 type File struct {
@@ -433,7 +436,7 @@ func (f *File) Resolve(arch, osTag, hostRelease string) (*Provider, *Target, err
 	return nil, nil, errf("no provider has a target matching %s-%s", arch, osTag) // step 4
 }
 
-func errf(format string, args ...interface{}) error { return &simpleError{fmtErr(format, args...)} }
+func errf(format string, args ...interface{}) error { return &simpleError{fmt.Sprintf(format, args...)} }
 
 type simpleError struct{ s string }
 

@@ -311,14 +311,14 @@ func parseReplaceSpec(args []string, fix VersionFixer) (*Replace, error) {
 	}
 	if fix != nil {
 		if old.Version != "" {
-			v, err := fix(old.Path, old.Version)
+			v, err := fix(string(old.Path), old.Version)
 			if err != nil {
 				return nil, err
 			}
 			old.Version = v
 		}
 		if new.Version != "" && !isFilePath(new.Path) {
-			v, err := fix(new.Path, new.Version)
+			v, err := fix(string(new.Path), new.Version)
 			if err != nil {
 				return nil, err
 			}

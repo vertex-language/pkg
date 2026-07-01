@@ -1,6 +1,7 @@
 package mod
 
 import (
+	"fmt"
 	"strings"
 	"unicode/utf8"
 )
@@ -42,7 +43,7 @@ func newInput(filename string, data []byte) *input {
 }
 
 func (in *input) errorf(pos Position, format string, args ...any) *SyntaxError {
-	return &SyntaxError{Filename: in.filename, Pos: pos, Err: fmtErrorf(format, args...)}
+	return &SyntaxError{Filename: in.filename, Pos: pos, Err: fmt.Errorf(format, args...)}
 }
 
 // peek returns the next token without consuming it.
